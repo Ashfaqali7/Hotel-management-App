@@ -12,6 +12,9 @@ import Detailsstyles from '../component/styles/DetailsStyle';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 const PDetails = ({navigation, route}) => {
   // console.log(route.params.singleData);
+  const handleBookClick = () => {
+    navigation.navigate('Booking Form');
+  };
 
   const {comingData} = route.params;
   console.log(route.params.singleData.description);
@@ -42,9 +45,7 @@ const PDetails = ({navigation, route}) => {
           <Text style={styles.des}>{route.params.singleData.description} </Text>
         </View>
         <View>
-          <TouchableOpacity
-            style={styles.buyButton}
-            onPress={() => alert('Thank You for using my app ')}>
+          <TouchableOpacity style={styles.buyButton} onPress={handleBookClick}>
             <Text style={{color: '#fff'}}>BOOK NOW</Text>
           </TouchableOpacity>
         </View>

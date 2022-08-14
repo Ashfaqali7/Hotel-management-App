@@ -18,7 +18,7 @@ const SignUP = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const goTosignUp = () => {
-    navigation.navigate('SignUp');
+    navigation.navigate('Login');
   };
   const signUP = () => {
     auth()

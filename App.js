@@ -14,7 +14,6 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Booking Form" component={BookingDetails} />
         <Stack.Screen
           options={{title: 'Login'}}
           name="Login"
@@ -23,6 +22,7 @@ function App() {
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="home" component={HomeScreen} />
         <Stack.Screen name="hotelDetail" component={HotelDetail} />
+        <Stack.Screen name="Booking Form" component={BookingDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );
